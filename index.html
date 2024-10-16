@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+      <div class="icon-container">
+        <div class="icon-box about" data-modal="about">
+          <i class="fa-regular fa-address-card"></i>
+        </div>
+        <div class="icon-box projects" data-modal="projects">
+          <i class="fa-solid fa-laptop-code"></i>
+        </div>
+        <div class="icon-box testimonial" data-modal="testimonial">
+          <i class="fa-solid fa-users-rectangle"></i>
+        </div>
+        <div class="icon-box contact" data-modal="contact">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+      </div>
+    </section>
+    <div class="popup" id="about">
+      <div class="popup-container">
+        <div class="popup-header">
+          <div class="button-container">
+            <button class="close-btn circle-btn red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="close-btn circle-btn yellow">
+              <i class="fa-solid fa-window-minimize"></i>
+            </button>
+            <button class="maximize-btn circle-btn green">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </button>
+          </div>
+        </div>
+        <div class="popup-body about-container">
+          <div class="img-frame">
+            <img
+              src="irinaid.jpg"
+              alt="" />
+          </div>
+          <div class="hero-content">
+            <h1>Irina Bocancea</h1>
+            <p>
+                I'm excited to be here as I embark on my journey in front-end development. 
+                Currently, my focus rely on the fundamental technologies such as HTML, CSS, and JavaScript.
+                 I love the idea of turning ideas into reality through code and exploring how design and functionality come together to enhance user experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="projects">
+      <div class="popup-container">
+        <div class="popup-header">
+          <div class="button-container">
+            <button class="close-btn circle-btn red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="close-btn circle-btn yellow">
+              <i class="fa-solid fa-window-minimize"></i>
+            </button>
+            <button class="maximize-btn circle-btn green">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </button>
+          </div>
+        </div>
+      <div class="popup-body">
+          <div class="skill-list">
+            <h1>Skills</h1>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+            </ul>
+          </div>
+
+          <div class="project-container">
+            <h1>Projects</h1>
+            <div class="all-projects">
+              <div class="project-box">
+                <img
+                  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAPDQ8PDw8PDw8PDxAQDQ8PEA8NDw8PFxYXFhYRFRUYHSgsGRolHRUVITEhJSorMS8uFx8zODMsNygtLisBCgoKDg0OGxAQGysjICUtKy0uLTctMCstKy01MCstLTArKzIrLS8rKysrLSsuLS0tKy0rLS0tLS0tLS0rLS0vLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAADAAMBAQAAAAAAAAAAAAAAAQIDBAUGB//EADoQAAICAQMCBAQEAwgCAwEAAAECABEDBBIhBTETIkFhBlFxgTKRobEjQlIUM2JywdHh8AeSFiSCFf/EABoBAQEBAQEBAQAAAAAAAAAAAAABAgMEBQb/xAAuEQACAgIBAgUCBAcAAAAAAAAAAQIRAyESMVEEEyJBYXGhFLHR8AUjMkKBkeH/2gAMAwEAAhEDEQA/APXCOIRz8MffGJYkCWJAMSpIlCAOEISAcIQgDhFHACEIQBwihAHCKEEHCKEAcIoQBwuKEoHcLiuFwBwihcEHCK4XAHCK4XAHCK4XAHCKFwBwuTCCGrHEI5TYxLEkShIBiVEJUgCEcIAQjhACEIQAhCEAIQhACKOKAEIQgBCKEoHCKEECEUIA4XFcVwCrhcm4XAKuEm4XBCrhcm4XAKuFybhcAq4XJuFygwiVUAIwJDQCWBEBLAgCEqAEqpATUcdR1IUUI6jqCEwlVCoBMJVRVAFCOEAmEcJQTCOFQCYRmKUChCEAUIRQQIQigDhcUUAdwuKEoHcLiiuCFXC5NwuAVcLk3C5QVUYEoCMCZNABKAjAlASAVR1GBM2NBMSmkG6MKqT2BMsYG+Rm6gmZROTyv2Rxlko5hwsO6n8pNTsgSMmBW7j/AHlWXuiLP3OTUKm1m0hHI5H6zXqdVJPodoyUuhNRVLqEpSKhUqoVAIqKpdRVAJqKpcVSgiIiXUUAiKWRJlITCOIwBRRmIwBRRxSgIoRQB3C4orlIOEVxXAKuFybhcA2wJQEYEsCYKICJmr6yzwLPpNB83P1kKjcVpsY2nOxZJt42nnktllE0/iL4p0vTlxnUFy2Unw8eJQ+RgK3NRIAAsck+s6vROq4dZgXPp3342sdirKw7qwPYifPP/KvQc+o/s+pwI2XwlfHmxoCzhSQyuF9R3Brnke9dj/xN03NptHlOdGxeNmD48bgq20KF3lT2v3/pn1PwmD8Isql6r2v+fc+dKU/Mca0e+VZ5P/yH13VaHHp20wTzu4yNkTePKAVTuO9t/wCs9ajTU630zFrNO2DKDtbkMPxIw7MPeZ8PHHCalNWvcxO/Y53wn19eoaQZguzIrHHnx3YTIADwfVSCCPr7Td1WD1H3E53wn8Nr07HlQZTlOXIHLbfDAAFAAWffmdlp4/FeXDNLyv6fY6YnJbZzahMuVKMioTtWe1OyKhUqoVKWyKiqXUKlBFRVLqIiARUREuoqgGMiIyyIiJQRUkiWRERKCIpREREAgxGUYjKCYo4oIKKMxSgUIRSgdxXFCUh1gJQEqo6nAtml1HJtQD5n9BOI2o5m91/JRUf4b/WefOXmdYr0naEdWdvBlnQw5J5/T5ps9Pzv4uQZGXshxot0MfPmN/zE3f0E4vHab7FlrR6HG82ceSc3HkmwmSclo5TgdJMkyeJOeuSZBknTzHR53jNovNfW5mTGzoodlG7aSF3AckAnsaur4uG+cz4j1nh6Y/1ZcmHAn+bLkXH+zE/aYguc0vkxKNI6WXkC+8xVHkf946lx9DstImoSoToasiFSqhUCyKiqXUVQWyCIiJZEREpSKkkTIRJIgGMiIiZCJJEoMZkkTIRJIlBBEkzIRJIghjIiMsiSRKCDEZRiMoJMkyopQKKOSZSHfAjqVUKnAzZ534lXzKfmv+s82/eew+I8N4g/9Jo/Q/8ANTyeRZuLo9+D1QDDkmDreofCuPWYwWbTE+Mg75NK1eIo9xSuP8nvLAmZHnSEuMk6v97N5MXKNHZ6fr0zY0y42DY3UMjD1H+/tOhjyz5c+TN0jK2TCpy9PyNufED/AHDH5f0+x7HsaNGeu6N8RafVAeDlUt642OzKPqp/ccRn8I4rnDcX79vr8nmhkTfGepfvoeqXJMq5Jy8eeVn12PEhfLkTGg7tkYIv5mePi26RqWNLZ1BknldTrv7b1jFp8ZvB029RqmH4TqmUpixX/hDMT7/ScTrPxw+of+x9JVsufJwdRVJjXsWW/l/UeB6XPQ/CnRV0OmGFCcmV2OTUZKJbLlPc/Qdh/uTPasL8PBzyak1SXur6t9tdPk8leZKo9F1Z6EvZA+ZE2yKnGOUeIMbkruBvupK9jRH7zqahGyYQ+MhSVD0wF7qFXXrXE8cdI3lXFpezMpWRu9jXzAJX85pakNj04yfw1BVVYDykWfwivdj9zI0vUMZXazncatFobByVJrn+WrJom/SdEY4y42t7OlUVRaZ+53oxJakvmh6fXtMeLWLkPlBNk8CuK+pHrInsX1+DLUVSqhKEyKiqWZP+nB+sGrJqIiWRFUpTGRJImQiIiAYiJJEykSSJQYyJJEyESSJQYyJJEyESSIBjIkkTIRJIlBjMRlERGUhEUoiTU0D0lQFfPt39p4vqPWMykk2CQStOPKfnQPIo/t9vK6DqGRMytuY5TQfbY3n1Fe/ykhgclZteHb9z6n1LLiGJhkYBWBHcX9Z4ZnB7EMLNEdj7zma/WZefGGQFrOxtyhFvg7ff/T8tXTazYdo3MOOeWr6zfkOj1eHjwvZ3KhU1MWsB9ZtLlBnJpo9iQ/SjyDwQeQR8p5/qPwdpcxJS8DH0Smx3/kPb7VPQ2IYUZ3CIpZj2Ar879J0xZsmJ3B0c8uDHkXrR5NfhDVjhOouFHYBs6CvoHmxpPgFGffqdVkyn12rTEfIuxYz366J9MUyZsaspBradwDegN+s2ta6ajGfDCnOrABUoECgSpPqKN3Or/iPiGtP7L9DweR4dSVK13vRzfh3pOnxK+LTIuMrt3CyGcm63ZCDZ4+3tc3M+RsD48ilmxOqspraeeQrfI89vWRg6fjGUDxmORaJRW8IF67HvYAPynVx6gJamyjko4cKdpAvaa4IIN37+hnkk3J8nv8xKajKo9O1Ua7Aa5QSfBGE2rEC+ByOD27flN3pgbYp3X5vMCFIK/nx/3iaep0KnEy6WlYLyptMRB78ntx8ofDuMgOHBO1yp3MpVa42gjvMPuYnTxunS7e6NzGgqjjU4gAPDVC6KR6BQOwoekw6zouFyMmJlU7LRQbxFj2bjt9uJg1+7Bm/+uKZwu7cSwVVayOSO4Zuf3qpgzf2tGXL4dYARYUqzBdpAJA9LqEtWiQjJNOMq13I07ajDlVMqnGji78pXjvTDuTx3nocRSjQvygkkUCO34vn7TjDUtqNOyKrAjJsQ5mLW5PcMNxA5IF1XbiR0xgFbHlO4u7JmV8jDatFSEr6e3qYcbdsuVOcb6NdUjq6Pwl4OWyG2KrN5gdu4LyfM20X+cyYmGRmp+PQVdH15nNxjZqGDPeE0ULkKNzGthPqbIr6ibmrIxKBhUAs2xtp4UkXZP8v/ACJlrsc5RV1e30JfUKvlNEoQa5Jsn1J9zxM+TJabwQpB/DwbUff1mvnwrkxFbx2yKSEqw1/jB7kXx9pzBos5Z8S5UWhW8kEWeKodj/uJqmWEcclt0dXT6xMiKQGJK7iVVzj/APapYyqRd8bit+li7/acvT530+RdMwJO1TjZNxVq5JJHbkc33m5j0m5SfEKsTuZRaruPevUAmz695XSDjxfwbdSSJr6PUErtcAOGNhQCCQfxH9Jl1OoVWUdyyk8AnkFRVCz/ADfL0MXuhbXUZEkiZEIa6KkrW4WCRfa5iyFr4Ula9CO8cirYiJJEyBTXv+0Si/l7wpIGIiSRMtd/aTU0mgYiJJEykSSJQYiJJEylZBEtgxkSalsR6EHmvvCpbDRR6PpjhBC+YLeNmdnBBF9yTYInMw6ZcD48mNVbMUrIR5gnayKA9+aF+06+p12NUTGiBmYbFB8x2/zEk/uZQVtl46THx/Ew+GWFHm7BHoR6+vb05833Nx5RXqX+LNbU4sXUMIxncGxvxkYDepB579wR9u05un+GdO4O7UtQJ83kUd/W/T6VPR/2vHvpQoZhubgfn+k4+q6YcTjJp2Drf8YFQzKt3f0Bmo5HdXoRtaWuxy9Z8E5TktNQqp6syXXyoLU3+i48ONTifFjcjjJky1ZruaINfS/vOznyqdKw3Ou6qZe9n1+k036fiyUqM/idy52lPoe36R5spKpG+bcWptljSppg+XCAU/vPKCzKh70f5h7fL85SZ8RQvsUPtZw4Cq49djV3/wC/fHpzlTIMebbsKkqRduAQCCCOO/vc3dFpdOWY4kIZDRLbqJoGxfcUe8xK9nJtLbbfz+po4urh8WTxFVlAG1Dbc/4h7cTodP12LInZSRa3Q+4mlqOm6bNnU5MYxtyqbf4bsw54r8VC5gxdDCecZm8IGwAlOVPPLX355NQ1GrNfypaejz2fXKdRkZUK1kyJjYHe481EWfSx+gnf6DrSKXMWLjhS4Aaqrd27nmbT9LxIgyacJjdCdzIqeI3NsLIPPBHa+TyDJ1ONtQgcY2xkqf7wFfMGFOQLrgN7ncL7cbk4tHR5YzSi19X7mwowHO2RCV2qVbb9iaH2H5TRbTthzbVe1yK21msBQTZtOxNmYj0XIl5cbKxAJLcqa7nvL0PUcbKxcIxQ+Y5DtAAALNdGgBf5TKv+0nGMdp8l2N84tTuOTHkRySo2FaalNFrv1F0Pe/aPTdVG/a4KFTW08ESMenyHJvwkZMXlZULUVPPINc9x3M18evwZGc5E3Ooplol/YVI1fQ5xUd8lf5mx1HqoxurHaFYkWOeSQFv8xHk1OHVFQR5logg7DtsAm69LuvaZMGl04oeGGJs05GQqD3Aix9N0+El7JU81uICD5D5/eZ0LxpUrTXRmhrNI4dRhZaF0+S2BO7ncB6iv2mDrOLLi3ZWcMu7GHOM2cbAeXcP/AN/qs6A6WmTGQuQgeelf+IGDd1b53z+Z7xaJXyMyZdoRbRk4bf27/Icfr6VNppHRZHab3XXRzul63IauvCAZl2WDlI/lFgAGz8539RrEA8pUMiB3UrbBTYABHAO4e/Y/Wa/WtJifEuMHwivGJk42mweB9pek0iY8a/xGdgRbORZ+woSNp79zlkcZ1Kn9DV1GfJjbxWR2xsgtlBJSz+Hjn5TNlD6gUrvh8u0OVFg1wRu7nkd77Ta1GZgvlUCrfyseVFWarvZ7X7zR1fVFXGWoBgbXt+M8X9ZnposVKe4rfQvTsMByVvbbuYkqfMwAvzdu8WDV43UnJTNbU1bSoIquPb1kN1cLiO/8JHN8gzB0/XHYqqqY12i8eQFybHYkNx9fN/vVdG5Y2rclsePTakts8jYTtdMu5lbvuVSoHcUPXmplzLmx5fwNmFcbSK7g2VJqwQOe/wApWbqoRRQrcopeCFJ9Iafqv8MEkKxIu+K55X61YlTfUjjOrrqbWNMgSnoMebUlh/lHzmrl0WU5CR4ZWze/klT6Dj51MeLqF5TuWxupea8m0HdXqd3EvVdQO0EctwHCbnANelC5KadoiUk6GcBq2ybWN8BbUevJ+0zYc6gbbtgQrADgE+81Dos7tvCCmUDl68v+Ujj/AIlf/wAfN2LYypIJ8zX3v+mVQNNp9ZIs6wK1Ht6H0mUupPNg8kDiiBXN+nfsfeZM/S0KVt3MBQt2X78cfpOdg6XqLCuRs7EjJuIHt5f3lUTNwl8G2MisTXoLkZkV1Kq62R9SPkZWXp2zC6ocjsTYb+HuB9PQCaekwZ2yL4mN0VT+I7DxxwaPrX6TSRPT1Q8HTnDhndXAHFAg/ebnhTdKSdkWZbs4fWenY8OLxUysXDDjKcYZl9QtAfWYtJ1hVQvzRCoFDgr3NUoJA/F3+nynU6NqWysD6KDvvsRXA+t0ftNjrmB82FsS4d10VYOibWHINGE09M250+M9/JzdOmnydx4eVgVxMGBd0Wjf0Bbsfn7zWOvy4sezGi2rMrtdUoDecUDZsL3rgk+ky9K6TqQwGUBFvkqynj6D1/KdTVdHTlsAXE5u2VcILX3tmxseZejornBPbs0+l9SDEBmoVRWuT8z+36/bU1GRNO9qzFG9e4BF2L9vlH/8ezk0Rp2X/E7E/fyUfyE3tT0jKcC4kGCwd29mcENVUAF7VxUnFF5QUrT6mLVarDkwqTk5AO1gVLEngHiVoAm0pjyZGZeWJ2lVvkKeB+Q5qr9+dqemNjRlyLbHlRgw6jKGYfMhOPWYuj4MrMVXFmxh2BfxsOVFAoA8kfISuGhSrUjrHq4sK24cstMAOQfxA9/mP+87eLMhZjjLb/DVW8xKAWSKUmt3JJNdq9pzuodHYCsWPPlYHgu2nCV8hRBH3ucd8+fBmCsjA2u5Cy2ikfi9/tJxvoThCS9J03wZMRfZi2Y/EfJYAq2JJbj5ljz7zbTqjKo3Vtpt6nu3Hp/35xdIcahnx5C7jl2G5k2KeAlrVj8Xf/SdXD0XT4+UxC6IG98uRfpTEyNK9knlilxkt/Bw9L1U1tAVrqgxIVlsXzR9IuoJjDeKuMKd4BCE7WWuHZRwD3H2E2OpdBzZXDY/7NiA9FORR9RQ4P6Gben6FWLazpvN7mKeL/6lq2/aWklovm475fY19D1gNiDMrYy20eG+3cpuq8pIv7+k871Bqc7lZPOSG5UXff73+s9To/h8I4Z83igfynGqfqDNnL0LStz4W0/1Kxv9bhcUywz4scnW7OFotcwA3YULeILNjhA3GS670Aa+02NXnR3CZCwV6oAHm+Lv0Hfmb6/DuENu8TP3sjeu0/bbOd8R6bK+VWw6bMxChSR4W2h2I80ceTMrJjcvTo2HxED+BuJugpIN/wCIe01BqMuDNsoFdxORmDI5sWCB9fn6Tb+HdJnDF86vj2jyq23k/Yn/ALU3Nd0LFmbc+TPY7Vkqh8u0iik9keZJ8XtGjqd2pS1DM+PmsY4s9gb7cTmZPHAPiJlwoN394FG4+hBBPvPXaDSpgTYl1d2xs39Zsb4VIyvEuOktHkum658mzErruJA47EDvwe3E9EvRtMAQcQYHvvZ3/LcTU298W6Pocp5ZSetHPy9A0rAg4uPZ8lD7XPP6DLiVlUJj8MKwcOC2W7BQAnso83H0r1nrnc1xV+lkgTyWt6DqXyllGmVSbA8XKCt96IUce01G37nTFNtNTb/2dbS9O0+dSzYxvUi2RnXnvxzMy9Bwgg3lNGwGcMP2mbpmmGHEqUAe7UbBb60JtF5m2YlknbpuvqcvqPRBl27XGELwoTGOB9iJn6T04acMN28t3bbtP7mbhaSWjk6onKTVFkyTJ3RbpCJFSTNHq3UBgx7j3J2r9e9zz+j+JmyY8T7lBbazqwsbSPwDkUff27TcYNqzaiz1piMxYM4dFcdmAIjLTBaKkxFpO6ChpMCYkCYxtUels36kzPvhCCNWPfDfHCCUG+G+OECgGSG+OEEpEubFWR7gkH85x9X8O4MxvJk1LEcC87mh8ufSEJpSa6FWuhv9N0WPTY/Dwjat2bO4k/MmbfiQhI3e2Sg8SHiQhIOKH4kPEihA4oN8PEhCBxQeJF4kcIHFC8SHiQhApC3w3whBaQt8XiQhApC8SLxIQlLQjkiOSEIAvFi8SEIopy/iDGcmAqEd2u127eD72RxPG4ulZWYK2kyhSwJJVCoN3u79/WEJ0hk46Kme904CY0ReyqAL7/eUcscJiiEnJF4kIQQ//9k="
+                  alt="" />
+                <div class="overlay">
+                  <h3>To do List</h3>
+                  <a href="https://github.Irinuta-prog/TO-DO-LIST" target="_blank">Viev on GitHub</a>"
+                  <button class="more-btn">
+                    <span>Learn More</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="project-box">
+                <img
+                  src="counter.JPG"
+                  alt="" />
+                <div class="overlay">
+                  <h3>Counter</h3>
+                  <a href="https://github.Irinuta-prog/quotes.github.io" target="_blank">Viev on GitHub</a>"
+                  <button class="more-btn">
+                    <span>Learn More</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="project-box">
+                <img
+                  src="https://i.pinimg.com/550x/1a/d0/6f/1ad06f52a7b6a1f763925e483b68565b.jpg"
+                  alt="" />
+                <div class="overlay">
+                  <h2>Random quote generator</h2>
+                  <a href="https://github.Irinuta-prog/quotes.github.io" target="_blank">Viev on GitHub</a>
+                  <button class="more-btn">
+                    <span>Learn More</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="project-box">
+                <img
+                  src="https://content.instructables.com/FYE/6J8G/J0487EAH/FYE6J8GJ0487EAH.png?auto=webp"
+                  alt="" />
+                <div class="overlay">
+                  <h3>Restaurant Bill Calculator</h3>
+                  <a href="https://github.Irinuta-prog/tipsrestaurant.github.io" target="_blank">Viev on GitHub</a>
+                  <button class="more-btn">
+                    <span>Learn More</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="testimonial">
+      <div class="popup-container">
+        <div class="popup-header">
+          <div class="button-container">
+            <button class="close-btn circle-btn red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="close-btn circle-btn yellow">
+              <i class="fa-solid fa-window-minimize"></i>
+            </button>
+            <button class="maximize-btn circle-btn green">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </button>
+          </div>
+        </div>
+    <div class="popup" id="contact">
+      <div class="popup-container">
+        <div class="popup-header">
+          <div class="button-container">
+            <button class="close-btn circle-btn red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="close-btn circle-btn yellow">
+              <i class="fa-solid fa-window-minimize"></i>
+            </button>
+            <button class="maximize-btn circle-btn green">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </button>
+          </div>
+        </div>
+        <div class="popup-body contact-container">
+          <h1>Contact</h1>
+          <p>Hi there, you can contact with me via email.</p>
+          <form>
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name.." />
+            <label for="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Your mail.." />
+
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 200px"></textarea>
+
+            <button class="submit-btn more-btn" type="submit">
+              <span>Submit <i class="fa-solid fa-paper-plane"></i></span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js" script></script>
+  </body>
+  </html>
